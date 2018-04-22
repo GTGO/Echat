@@ -1,5 +1,7 @@
 # Echat
 An anonymous chatting web.
+4.22 张伟颖
+
 聊天室前端界面上传，所有内容更新至Echat文件夹下：
 1、聊天室主界面：Echat.html
 (header 部分为用户端，通过点击进入跳转至name.html
