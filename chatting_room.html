@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="csstransforms csstransforms3d csstransitions">
+<head>
+    <meta charset="utf-8">
+    <!--  允许用户的最大缩放值为1-->
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <!--keywords -->
+    <meta name="keywords" content="Echat, Anonymous Web Chatting, Based on NEU IP, !!! Waiting to update !!! ">
+    <!--author-->
+    <meta name="author" content="Echat Group, CS1504, 978557973@qq.com">
+
+    <title>Echat</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/foundation/5.5.3/css/foundation.min.css">
+
+    <!--js-->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="https://cdn.bootcss.com/foundation/5.5.3/js/vendor/modernizr.js"></script>
+
+
+</head>
+<body>
+    <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="tab-bar">
+                <section class="left-small">
+                    <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                </section>
+
+                <section class="middle tab-bar-section">
+                    <h1 class="title">等待传送的标题</h1>
+                </section>
+            </nav>
+
+            <aside class="left-off-canvas-menu">
+                <ul class="off-canvas-list test">
+                    <li><label>Heading</label></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                    <li><a href="#">Link 8</a></li>
+                </ul>
+            </aside>
+
+            <!--消息框-->
+            <div class="panel-body" id="output" style="background-color: #333;">
+                <div style="height:728px; position: relative; background-color: #333;">
+                    <!--显示消息界面-->
+                    <div style="width: 50%; height: 80%; margin-left: auto; margin-right: auto; overflow: hidden; border: 2px solid white;">
+                        <div style="width: 102%; height: 100%; overflow-y: scroll;">
+
+                            <div id="othersmessage" style="text-align: left;">
+                                <span style="color: white;">nickname</span>
+                                <h3 style="color: white;">hhhh</h3>
+                            </div>
+                            <br>
+                            <div id="mymessage" style="text-align: right;">
+                                <span style="color: #96b97d;">nickname</span>
+                                <h3 style="color: #96b97d;">hhhh</h3>
+                            </div>
+                            <br>
+                            <div id="othersmessage" style="text-align: left;">
+                                <span style="color: white;">nickname</span>
+                                <h3 style="color: white;">hhhh</h3>
+                            </div>
+                            <br>
+                            <div id="othersmessage" style="text-align: left;">
+                                <span style="color: white;">nickname</span>
+                                <h3 style="color: white;">hhhh</h3>
+                            </div>
+
+                        </div>   
+                    </div>
+
+                    <!--发送消息界面-->
+                    <div align="center" style="width: 50%; height: 10%; margin-left: auto; margin-right: auto;">
+                        <form>
+                            <input type="text" class="form-control" ng-model="words" placeholder="说点什么呗" required>
+
+                            <button type="submit" class="btn btn-success" ng-disabled="postform.$invalid">发送</button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <a class="exit-off-canvas"></a>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- 初始化 Foundation JS -->
+    <script>
+       $(document).ready(function() {
+          $(document).foundation();
+      })
+  </script>
+</body>
+</html>
